@@ -1,0 +1,476 @@
+{
+  "adminPassword": "santa2024",
+  "families": [
+    {
+      "id": "db2b7746-8520-4cf5-8e02-a4fb9ecf6224",
+      "name": "CECILIA NDEGWA"
+    },
+    {
+      "id": "4a500e55-a25d-4147-a9af-03f58bda28c0",
+      "name": "WANJIRU NDEGWA"
+    },
+    {
+      "id": "0cfb4145-be21-4db0-941d-8cca0ecfe7c0",
+      "name": "MOSES NDEGWA"
+    },
+    {
+      "id": "448db1b6-2503-4949-abce-1c7391235318",
+      "name": "PETER NDEGWA"
+    },
+    {
+      "id": "bf483e96-c9c8-43c5-a45e-f97423515559",
+      "name": "MESHACK NDEGWA"
+    },
+    {
+      "id": "52876019-4e9d-4371-a781-7a75e0f4e7e5",
+      "name": "PHILLIP NDEGWA"
+    },
+    {
+      "id": "4adc7b14-8cd4-4325-ac45-442c65e11c39",
+      "name": "STEPHEN NDEGWA"
+    },
+    {
+      "id": "89b43e8b-bdb1-4488-a7aa-e86c3eed83c1",
+      "name": "DAVID NDEGWA"
+    },
+    {
+      "id": "3fb1f0ce-a64a-489a-b4e8-3615991a4878",
+      "name": "JAMES NDEGWA"
+    },
+    {
+      "id": "6341fe6c-b8b4-418e-875a-cd66a9574293",
+      "name": "NYAKWEA MUCHIRI"
+    },
+    {
+      "id": "f7fab9a3-8270-44f0-886d-8f34bf369246",
+      "name": "WAMUYU MUCHIRI"
+    }
+  ],
+  "members": [
+    {
+      "id": "323e909f-905f-4e17-b72f-e8b631aaae7f",
+      "familyId": "4a500e55-a25d-4147-a9af-03f58bda28c0",
+      "name": "MR MUCHIRI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "7ba6e02c-47d9-49f8-bab3-4a56b9829e2d",
+      "familyId": "4a500e55-a25d-4147-a9af-03f58bda28c0",
+      "name": "WANJIRU NDEGWA",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "eb41ea0b-8762-4424-a871-7bed5ef7961b",
+      "familyId": "4a500e55-a25d-4147-a9af-03f58bda28c0",
+      "name": "NYAWIRA  MUCHIRI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "f7f2e095-4fc8-4ee6-93b5-745827fa8d07",
+      "familyId": "0cfb4145-be21-4db0-941d-8cca0ecfe7c0",
+      "name": "MOSES NGARI",
+      "email": "mosesngari1@gmail.com",
+      "noSmartphone": false
+    },
+    {
+      "id": "bb8a92ac-98da-4085-936c-48c778e3ad5f",
+      "familyId": "0cfb4145-be21-4db0-941d-8cca0ecfe7c0",
+      "name": "BELLAH NGARI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "6c07665c-8870-42e3-8cb3-406e10346440",
+      "familyId": "0cfb4145-be21-4db0-941d-8cca0ecfe7c0",
+      "name": "GRACE NGARI",
+      "email": "grace21ngari@gmail.com",
+      "noSmartphone": false
+    },
+    {
+      "id": "df746026-b0d0-4945-9183-f5a3e9c9e000",
+      "familyId": "0cfb4145-be21-4db0-941d-8cca0ecfe7c0",
+      "name": "STEPHEN GACHIE",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "e1765ac2-15c3-4e95-b9c2-8623992a6f1d",
+      "familyId": "0cfb4145-be21-4db0-941d-8cca0ecfe7c0",
+      "name": "JUSTUS NGARI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "e7b08ec5-253b-4b01-81ba-d5aa5817a880",
+      "familyId": "0cfb4145-be21-4db0-941d-8cca0ecfe7c0",
+      "name": "SAMMY NGARI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "270f5e7f-d935-4fc3-aa63-87d188f6fced",
+      "familyId": "448db1b6-2503-4949-abce-1c7391235318",
+      "name": "PETER NDEGWA",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "d2831320-c87f-4918-aaa7-3041856508f5",
+      "familyId": "bf483e96-c9c8-43c5-a45e-f97423515559",
+      "name": "MESHACK NDEGWA",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "ca5c8a86-deb3-4cf7-abef-4e1ed01eea72",
+      "familyId": "bf483e96-c9c8-43c5-a45e-f97423515559",
+      "name": "DORCAS WANYEKI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "aff16f4c-e9ed-490c-8bd0-ba777567d838",
+      "familyId": "bf483e96-c9c8-43c5-a45e-f97423515559",
+      "name": "LILIAN WANYEKI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "ac8b0120-3449-46fd-979e-70fc30c74588",
+      "familyId": "bf483e96-c9c8-43c5-a45e-f97423515559",
+      "name": "LINDA WANYEKI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "28652c37-ebbf-42ce-a5f9-eb693679171a",
+      "familyId": "bf483e96-c9c8-43c5-a45e-f97423515559",
+      "name": "TIMOTHY NDEGWA",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "7fded8a9-8f59-4cfe-8e35-f2efb856d6c5",
+      "familyId": "bf483e96-c9c8-43c5-a45e-f97423515559",
+      "name": "JESSE WANYEKI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "6692e41d-716a-40cd-aa6d-fcf03a386ddd",
+      "familyId": "52876019-4e9d-4371-a781-7a75e0f4e7e5",
+      "name": "PHILLIP MAINGI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "5c168118-aa95-4d80-84b6-2cdf61c1a040",
+      "familyId": "52876019-4e9d-4371-a781-7a75e0f4e7e5",
+      "name": "LOISE MAINGI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "a6bcfbc5-c60b-45f4-a4b5-0b7df160ecac",
+      "familyId": "52876019-4e9d-4371-a781-7a75e0f4e7e5",
+      "name": "CHARITY NEEMA MAINGI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "2d8c62da-9929-441c-a26d-3b78d11e52a3",
+      "familyId": "52876019-4e9d-4371-a781-7a75e0f4e7e5",
+      "name": "TAMARA ABIGAIL MAINGI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "b2067c9d-34a7-4265-b9b9-1b87ad713419",
+      "familyId": "52876019-4e9d-4371-a781-7a75e0f4e7e5",
+      "name": "JASON ETHAN MAINGI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "064304fc-849e-4fb2-87f8-9dcccbaf102e",
+      "familyId": "52876019-4e9d-4371-a781-7a75e0f4e7e5",
+      "name": "SHARON JOY MAINGI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "bc84ccdf-eef4-4a51-9ed7-8cc8b4dcd397",
+      "familyId": "4adc7b14-8cd4-4325-ac45-442c65e11c39",
+      "name": "STEPHEN NDEGWA",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "25444bad-4037-408a-89d8-3afa9c2a0800",
+      "familyId": "4adc7b14-8cd4-4325-ac45-442c65e11c39",
+      "name": "ESTHER MUTHUI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "27faaf21-06a5-4ae5-b915-22e3d16516b5",
+      "familyId": "4adc7b14-8cd4-4325-ac45-442c65e11c39",
+      "name": "CELINE MUTHUI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "84488fdf-f4f4-423c-8165-7180efd4c246",
+      "familyId": "4adc7b14-8cd4-4325-ac45-442c65e11c39",
+      "name": "VICTORIA MUTHUI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "afe73cbf-f223-4492-b901-7a0c3fa56b84",
+      "familyId": "4adc7b14-8cd4-4325-ac45-442c65e11c39",
+      "name": "JUSTUS MUTHUI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "a73caa90-36cc-41b5-a07a-30f9fac8d171",
+      "familyId": "89b43e8b-bdb1-4488-a7aa-e86c3eed83c1",
+      "name": "DAVID NDEGWA",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "40463661-431b-4c79-b2bf-8ec6e8523680",
+      "familyId": "89b43e8b-bdb1-4488-a7aa-e86c3eed83c1",
+      "name": "SARAH WAMBUGU",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "eefbad5c-7c2c-44c7-88f2-01850674958c",
+      "familyId": "89b43e8b-bdb1-4488-a7aa-e86c3eed83c1",
+      "name": "LEMUEL WAMBUGU",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "fada831d-5eb2-4b6f-89c2-69ef57059dcc",
+      "familyId": "89b43e8b-bdb1-4488-a7aa-e86c3eed83c1",
+      "name": "JAEL WAMBUGU",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "918fa109-8eb2-4793-93f3-b0dd1b11c811",
+      "familyId": "89b43e8b-bdb1-4488-a7aa-e86c3eed83c1",
+      "name": "JOANNA WAMBUGU",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "39dd22c9-1cb2-40e5-81a8-c2820b64e51e",
+      "familyId": "3fb1f0ce-a64a-489a-b4e8-3615991a4878",
+      "name": "JAMES NDEGWA",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "0ef3e290-c65a-44e6-9fc3-3ab88e00ee77",
+      "familyId": "db2b7746-8520-4cf5-8e02-a4fb9ecf6224",
+      "name": "CECILIA NDEGWA",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "c3bcd8ae-815e-4070-9fb7-e2ed02fb7f3c",
+      "familyId": "6341fe6c-b8b4-418e-875a-cd66a9574293",
+      "name": "NYAKWEA MUCHIRI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "047d7d00-7f38-42e0-983c-cb0324b359c4",
+      "familyId": "6341fe6c-b8b4-418e-875a-cd66a9574293",
+      "name": "ETHAN MURIMI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "c61f0899-037c-43ca-89f7-3131770167c4",
+      "familyId": "f7fab9a3-8270-44f0-886d-8f34bf369246",
+      "name": "WAMUYU MUCHIRI",
+      "email": null,
+      "noSmartphone": true
+    },
+    {
+      "id": "92a35d28-f80f-4b05-8ead-d8f6dd4ecff3",
+      "familyId": "f7fab9a3-8270-44f0-886d-8f34bf369246",
+      "name": "CLAUDIA",
+      "email": null,
+      "noSmartphone": true
+    }
+  ],
+  "registrations": [],
+  "assignments": [
+    {
+      "giverId": "323e909f-905f-4e17-b72f-e8b631aaae7f",
+      "receiverId": "e7b08ec5-253b-4b01-81ba-d5aa5817a880"
+    },
+    {
+      "giverId": "7ba6e02c-47d9-49f8-bab3-4a56b9829e2d",
+      "receiverId": "df746026-b0d0-4945-9183-f5a3e9c9e000"
+    },
+    {
+      "giverId": "eb41ea0b-8762-4424-a871-7bed5ef7961b",
+      "receiverId": "5c168118-aa95-4d80-84b6-2cdf61c1a040"
+    },
+    {
+      "giverId": "f7f2e095-4fc8-4ee6-93b5-745827fa8d07",
+      "receiverId": "eefbad5c-7c2c-44c7-88f2-01850674958c"
+    },
+    {
+      "giverId": "bb8a92ac-98da-4085-936c-48c778e3ad5f",
+      "receiverId": "c3bcd8ae-815e-4070-9fb7-e2ed02fb7f3c"
+    },
+    {
+      "giverId": "6c07665c-8870-42e3-8cb3-406e10346440",
+      "receiverId": "064304fc-849e-4fb2-87f8-9dcccbaf102e"
+    },
+    {
+      "giverId": "df746026-b0d0-4945-9183-f5a3e9c9e000",
+      "receiverId": "27faaf21-06a5-4ae5-b915-22e3d16516b5"
+    },
+    {
+      "giverId": "e1765ac2-15c3-4e95-b9c2-8623992a6f1d",
+      "receiverId": "0ef3e290-c65a-44e6-9fc3-3ab88e00ee77"
+    },
+    {
+      "giverId": "e7b08ec5-253b-4b01-81ba-d5aa5817a880",
+      "receiverId": "ac8b0120-3449-46fd-979e-70fc30c74588"
+    },
+    {
+      "giverId": "270f5e7f-d935-4fc3-aa63-87d188f6fced",
+      "receiverId": "bc84ccdf-eef4-4a51-9ed7-8cc8b4dcd397"
+    },
+    {
+      "giverId": "d2831320-c87f-4918-aaa7-3041856508f5",
+      "receiverId": "6692e41d-716a-40cd-aa6d-fcf03a386ddd"
+    },
+    {
+      "giverId": "ca5c8a86-deb3-4cf7-abef-4e1ed01eea72",
+      "receiverId": "047d7d00-7f38-42e0-983c-cb0324b359c4"
+    },
+    {
+      "giverId": "aff16f4c-e9ed-490c-8bd0-ba777567d838",
+      "receiverId": "2d8c62da-9929-441c-a26d-3b78d11e52a3"
+    },
+    {
+      "giverId": "ac8b0120-3449-46fd-979e-70fc30c74588",
+      "receiverId": "e1765ac2-15c3-4e95-b9c2-8623992a6f1d"
+    },
+    {
+      "giverId": "28652c37-ebbf-42ce-a5f9-eb693679171a",
+      "receiverId": "40463661-431b-4c79-b2bf-8ec6e8523680"
+    },
+    {
+      "giverId": "7fded8a9-8f59-4cfe-8e35-f2efb856d6c5",
+      "receiverId": "323e909f-905f-4e17-b72f-e8b631aaae7f"
+    },
+    {
+      "giverId": "6692e41d-716a-40cd-aa6d-fcf03a386ddd",
+      "receiverId": "25444bad-4037-408a-89d8-3afa9c2a0800"
+    },
+    {
+      "giverId": "5c168118-aa95-4d80-84b6-2cdf61c1a040",
+      "receiverId": "aff16f4c-e9ed-490c-8bd0-ba777567d838"
+    },
+    {
+      "giverId": "a6bcfbc5-c60b-45f4-a4b5-0b7df160ecac",
+      "receiverId": "918fa109-8eb2-4793-93f3-b0dd1b11c811"
+    },
+    {
+      "giverId": "2d8c62da-9929-441c-a26d-3b78d11e52a3",
+      "receiverId": "92a35d28-f80f-4b05-8ead-d8f6dd4ecff3"
+    },
+    {
+      "giverId": "b2067c9d-34a7-4265-b9b9-1b87ad713419",
+      "receiverId": "6c07665c-8870-42e3-8cb3-406e10346440"
+    },
+    {
+      "giverId": "064304fc-849e-4fb2-87f8-9dcccbaf102e",
+      "receiverId": "28652c37-ebbf-42ce-a5f9-eb693679171a"
+    },
+    {
+      "giverId": "bc84ccdf-eef4-4a51-9ed7-8cc8b4dcd397",
+      "receiverId": "eb41ea0b-8762-4424-a871-7bed5ef7961b"
+    },
+    {
+      "giverId": "25444bad-4037-408a-89d8-3afa9c2a0800",
+      "receiverId": "39dd22c9-1cb2-40e5-81a8-c2820b64e51e"
+    },
+    {
+      "giverId": "27faaf21-06a5-4ae5-b915-22e3d16516b5",
+      "receiverId": "270f5e7f-d935-4fc3-aa63-87d188f6fced"
+    },
+    {
+      "giverId": "84488fdf-f4f4-423c-8165-7180efd4c246",
+      "receiverId": "b2067c9d-34a7-4265-b9b9-1b87ad713419"
+    },
+    {
+      "giverId": "afe73cbf-f223-4492-b901-7a0c3fa56b84",
+      "receiverId": "ca5c8a86-deb3-4cf7-abef-4e1ed01eea72"
+    },
+    {
+      "giverId": "a73caa90-36cc-41b5-a07a-30f9fac8d171",
+      "receiverId": "7fded8a9-8f59-4cfe-8e35-f2efb856d6c5"
+    },
+    {
+      "giverId": "40463661-431b-4c79-b2bf-8ec6e8523680",
+      "receiverId": "bb8a92ac-98da-4085-936c-48c778e3ad5f"
+    },
+    {
+      "giverId": "eefbad5c-7c2c-44c7-88f2-01850674958c",
+      "receiverId": "c61f0899-037c-43ca-89f7-3131770167c4"
+    },
+    {
+      "giverId": "fada831d-5eb2-4b6f-89c2-69ef57059dcc",
+      "receiverId": "afe73cbf-f223-4492-b901-7a0c3fa56b84"
+    },
+    {
+      "giverId": "918fa109-8eb2-4793-93f3-b0dd1b11c811",
+      "receiverId": "a6bcfbc5-c60b-45f4-a4b5-0b7df160ecac"
+    },
+    {
+      "giverId": "39dd22c9-1cb2-40e5-81a8-c2820b64e51e",
+      "receiverId": "a73caa90-36cc-41b5-a07a-30f9fac8d171"
+    },
+    {
+      "giverId": "0ef3e290-c65a-44e6-9fc3-3ab88e00ee77",
+      "receiverId": "fada831d-5eb2-4b6f-89c2-69ef57059dcc"
+    },
+    {
+      "giverId": "c3bcd8ae-815e-4070-9fb7-e2ed02fb7f3c",
+      "receiverId": "f7f2e095-4fc8-4ee6-93b5-745827fa8d07"
+    },
+    {
+      "giverId": "047d7d00-7f38-42e0-983c-cb0324b359c4",
+      "receiverId": "d2831320-c87f-4918-aaa7-3041856508f5"
+    },
+    {
+      "giverId": "c61f0899-037c-43ca-89f7-3131770167c4",
+      "receiverId": "7ba6e02c-47d9-49f8-bab3-4a56b9829e2d"
+    },
+    {
+      "giverId": "92a35d28-f80f-4b05-8ead-d8f6dd4ecff3",
+      "receiverId": "84488fdf-f4f4-423c-8165-7180efd4c246"
+    }
+  ],
+  "meetupDate": "2026-11-15",
+  "drawDone": true,
+  "remindersSent": [],
+  "registrationOpen": true
+}
