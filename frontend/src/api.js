@@ -6,7 +6,7 @@
 
 import axios from "axios";
 
-const BASE = import.meta.env.VITE_API_URL || "http://localhost:3001/api";
+const BASE = import.meta.env.VITE_API_URL || "https://secret-santa-t50p.onrender.com/api";
 
 function adminHeaders() {
   const pw = sessionStorage.getItem("adminPassword") || "";
