@@ -14,8 +14,9 @@ export default function Settings() {
   useEffect(() => {
     api.getStatus().then(r => {
       if (r.data.meetupDate) {
-        // Format for date input (YYYY-MM-DD)
         setMeetupDate(r.data.meetupDate.slice(0, 10));
+      } else {
+        setMeetupDate("2026-11-28");
       }
     });
   }, []);
