@@ -32,7 +32,7 @@ const api = {
   saveSettings: (data) => axios.post(`${BASE}/settings`, data, { headers: adminHeaders() }),
 
   // ── Draw ──────────────────────────────────────────────────────────────────
-  runDraw: () => axios.post(`${BASE}/draw`, {}, { headers: adminHeaders() }),
+  runDraw: () => axios.post(`${BASE}/draw`, {}, { headers: adminHeaders(), timeout: 60000 }),
   resetDraw: () => axios.delete(`${BASE}/draw`, { headers: adminHeaders() }),
   getAssignments: () => axios.get(`${BASE}/assignments`, { headers: adminHeaders() }),
 
@@ -42,7 +42,7 @@ const api = {
   // ── Registration ──────────────────────────────────────────────────────────
   getPublicFamilies: () => axios.get(`${BASE}/public/families`),
   getMembersPublic: (familyId) => axios.get(`${BASE}/public/members/${familyId}`),
-  memberCheckin: (data) => axios.post(`${BASE}/checkin`, data),
+  memberCheckin: (data) => axios.post(`${BASE}/checkin`, data, { timeout: 30000 }),
   submitRegistration: (data) => axios.post(`${BASE}/register`, data),
   getRegistrations: () => axios.get(`${BASE}/registrations`, { headers: adminHeaders() }),
   approveRegistration: (id) => axios.post(`${BASE}/registrations/${id}/approve`, {}, { headers: adminHeaders() }),
@@ -50,7 +50,7 @@ const api = {
   setRegistrationStatus: (open) => axios.post(`${BASE}/registration-status`, { open }, { headers: adminHeaders() }),
 
 
-  testEmail: (email) => axios.post(`${BASE}/test-email`, { email }, { headers: adminHeaders() }),
+  testEmail: (email) => axios.post(`${BASE}/test-email`, { email }, { headers: adminHeaders(), timeout: 30000 }),
 };
 
 export default api;
