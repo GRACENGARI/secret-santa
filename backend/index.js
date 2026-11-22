@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 3001;
 const allowedOrigins = [
   "http://localhost:5173",
   "https://secret-santa-1-jfeb.onrender.com",
+  "https://secret-santa-1-lyk0.onrender.com",
   process.env.FRONTEND_URL,
 ].filter(Boolean);
 
