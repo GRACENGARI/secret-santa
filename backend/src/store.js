@@ -1,6 +1,9 @@
 /**
  * In-memory data store with JSON file persistence.
- * Saves to data.json next to this file so data survives server restarts.
+ * On Render (and other ephemeral file systems), data.json is loaded from
+ * the deployed file on startup. Changes are saved in-memory and to disk
+ * but will reset on redeploy — that's fine for this use case since the
+ * families/members are set up once before the draw.
  */
 
 const fs = require("fs");
@@ -9,15 +12,15 @@ const path = require("path");
 const DATA_FILE = path.join(__dirname, "..", "data.json");
 
 const defaultState = {
-  adminPassword: "santa2024", // admin can change this in .env
-  families: [],       // [{ id, name }]
-  members: [],        // [{ id, familyId, name, email, noSmartphone, isParent, isChild, parentId }]
-  registrations: [],  // [{ id, name, email, familyId, submittedAt }] — pending admin approval
-  assignments: [],    // [{ giverId, receiverId }]
-  meetupDate: null,   // ISO date string e.g. "2026-12-20"
+  adminPassword: "santa2024",
+  families: [],
+  members: [],
+  registrations: [],
+  assignments: [],
+  meetupDate: "2026-11-28",
   drawDone: false,
-  remindersSent: [],  // ["6weeks", "2weeks", "3days"]
-  registrationOpen: true, // admin can open/close registration
+  remindersSent: [],
+  registrationOpen: true,
 };
 
 let state = { ...defaultState };
