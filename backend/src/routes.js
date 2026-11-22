@@ -72,22 +72,30 @@ router.post("/checkin", (req, res) => {
   if (!memberId) return res.status(400).json({ error: "Please select your name." });
   if (!email || !email.trim()) return res.status(400).json({ error: "Email is required." });
 
-  const { members } = getState();
+  const { members, meetupDate } = getState();
   const idx = members.findIndex(m => m.id === memberId);
   if (idx === -1) return res.status(404).json({ error: "Member not found." });
 
   const member = members[idx];
+  const cleanEmail = email.trim().toLowerCase();
 
-  // If they have an email, automatically unmark them as noSmartphone
   const updated = {
     ...member,
-    email: email.trim().toLowerCase(),
-    noSmartphone: false, // they clearly have a device if they're filling this in
+    email: cleanEmail,
+    noSmartphone: false,
   };
 
   const newMembers = [...members];
   newMembers[idx] = updated;
   setState({ members: newMembers });
+
+  // Send confirmation email — non-blocking
+  const { sendConfirmationEmail } = require("./mailer");
+  sendConfirmationEmail({
+    name: member.name,
+    email: cleanEmail,
+    meetupDate: meetupDate || "2026-11-28",
+  }).catch(err => console.error("Confirmation email failed:", err.message));
 
   res.json({ ok: true, name: member.name });
 });

@@ -117,4 +117,50 @@ function reminderEmailHtml({ giverName, receiverName, receiverFamily, dateStr, s
 </html>`;
 }
 
-module.exports = { sendAssignmentEmail, sendReminderEmail };
+module.exports = { sendAssignmentEmail, sendReminderEmail, sendConfirmationEmail };
+
+/**
+ * Send a confirmation email when someone registers their email.
+ */
+async function sendConfirmationEmail({ name, email, meetupDate }) {
+  const transport = createTransport();
+
+  const dateStr = meetupDate
+    ? new Date(meetupDate).toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "long", day: "numeric" })
+    : "28th November 2026";
+
+  await transport.sendMail({
+    from: `"Ndegwa Secret Santa 🎅" <${process.env.GMAIL_USER}>`,
+    to: email,
+    subject: "🎁 You're registered for Secret Santa!",
+    html: `
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body style="font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px;">
+  <div style="max-width: 500px; margin: auto; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <div style="background: #c0392b; padding: 30px; text-align: center;">
+      <h1 style="color: white; margin: 0; font-size: 28px;">🎅 Secret Santa 2026</h1>
+    </div>
+    <div style="padding: 30px;">
+      <p style="font-size: 18px; color: #333;">Hey <strong>${name}</strong>! 🎉</p>
+      <p style="font-size: 16px; color: #555;">You're officially registered for the Ndegwa Family Secret Santa!</p>
+      <div style="background: #eafaf1; border: 1px solid #a9dfbf; border-radius: 8px; padding: 16px; margin: 20px 0; text-align: center;">
+        <p style="font-size: 14px; color: #555; margin: 0 0 6px;">📅 Mark your calendar</p>
+        <p style="font-size: 20px; font-weight: bold; color: #27ae60; margin: 0;">${dateStr}</p>
+      </div>
+      <p style="font-size: 15px; color: #555;">Here's what happens next:</p>
+      <ul style="font-size: 14px; color: #555; line-height: 2;">
+        <li>🎲 The draw will be done soon — you'll get an email with who you're gifting</li>
+        <li>🔔 You'll get reminder emails as the meetup gets closer</li>
+        <li>🤫 Keep your assignment secret until the day!</li>
+      </ul>
+      <p style="font-size: 13px; color: #aaa; margin-top: 24px;">
+        This email was sent by the Ndegwa Family Secret Santa app — familyndegwa4@gmail.com
+      </p>
+    </div>
+  </div>
+</body>
+</html>`,
+  });
+}
