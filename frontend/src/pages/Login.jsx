@@ -88,8 +88,8 @@ export default function Login() {
         <div className="login-card card">
           <div className="login-header">
             <div className="login-icon">🎅</div>
-            <h1>Secret Santa</h1>
-            <p>Family Gift Exchange</p>
+            <h1>Secret Santa 2026</h1>
+            <p>Ndegwa Family Gift Exchange 🎁</p>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
             <button
@@ -107,6 +107,9 @@ export default function Login() {
               🔐 I'm the Admin
             </button>
           </div>
+          <p style={{ fontSize: 12, color: "var(--muted)", textAlign: "center", marginTop: 16 }}>
+            All we need from you right now is your email. That's it! You'll receive all the details closer to the meetup. 🎅
+          </p>
         </div>
       </div>
     );
@@ -152,9 +155,9 @@ export default function Login() {
       <div className="login-page">
         <div className="login-card card" style={{ textAlign: "center" }}>
           <div style={{ fontSize: 56, marginBottom: 12 }}>🎉</div>
-          <h2 style={{ marginBottom: 8 }}>You're all set, {memberName}!</h2>
+          <h2 style={{ marginBottom: 8 }}>You're all set, {memberName}! 🎉</h2>
           <p style={{ color: "var(--muted)", fontSize: 15, marginBottom: 20 }}>
-            Your email has been saved. You'll receive your Secret Santa assignment by email once the draw is done. Keep an eye on your inbox!
+            Your email has been saved. That's all we need from you for now! You'll get all the Secret Santa details closer to the meetup. Keep an eye on your inbox! 🎁
           </p>
           <p style={{ fontSize: 13, color: "var(--muted)" }}>🤫 Don't tell anyone who you're gifting!</p>
           <button className="btn btn-ghost btn-sm" style={{ marginTop: 20 }} onClick={reset}>
@@ -166,15 +169,15 @@ export default function Login() {
   }
 
   // ── Member check-in — form ─────────────────────────────────────────────────
-  const familyMembers = members.filter(m => !m.email || m.needsEmail);
+  const alreadyHasEmail = members.find(m => m.id === memberId)?.hasEmail;
 
   return (
     <div className="login-page">
       <div className="login-card card">
         <div className="login-header">
           <div className="login-icon">🧑</div>
-          <h1>Hi there!</h1>
-          <p>Find your name and add your email so we can send you your Secret Santa assignment</p>
+          <h1>Hi there! 👋</h1>
+          <p>Find your name and add your email — that's all we need from you right now!</p>
         </div>
 
         {error && <div className="alert alert-error">{error}</div>}
@@ -195,7 +198,7 @@ export default function Login() {
           </div>
 
           {familyId && members.length === 0 && (
-            <div className="alert alert-info">No members found in this family yet. Ask the admin to add you first.</div>
+            <div className="alert alert-info">No members found in this family yet. Ask Grace to add you first.</div>
           )}
 
           {familyId && members.length > 0 && (
@@ -203,42 +206,51 @@ export default function Login() {
               <label>Your Name</label>
               <select
                 value={memberId}
-                onChange={e => setMemberId(e.target.value)}
+                onChange={e => { setMemberId(e.target.value); setEmail(""); }}
                 required
               >
                 <option value="">— Select your name —</option>
                 {members.map(m => (
-                  <option key={m.id} value={m.id}>{m.name}</option>
+                  <option key={m.id} value={m.id}>
+                    {m.name}{m.hasEmail ? " ✅" : ""}
+                  </option>
                 ))}
               </select>
-            </div>
-          )}
-
-          {memberId && (
-            <div className="form-group">
-              <label>Your Email Address</label>
-              <input
-                type="email"
-                placeholder="yourname@gmail.com"
-                value={email}
-                onChange={e => setEmail(e.target.value)}
-                autoFocus
-                required
-              />
               <span style={{ fontSize: 12, color: "var(--muted)" }}>
-                Your Secret Santa assignment will be sent here — only you will see it.
+                ✅ means you already added your email — you can update it below
               </span>
             </div>
           )}
 
           {memberId && (
-            <button
-              className="btn btn-red"
-              style={{ width: "100%", justifyContent: "center", padding: "12px", fontSize: 16 }}
-              disabled={loading}
-            >
-              {loading ? <span className="spinner" /> : "Save my email 🎁"}
-            </button>
+            <>
+              {alreadyHasEmail && (
+                <div className="alert alert-info" style={{ marginBottom: 12 }}>
+                  You've already submitted your email. You can update it below if needed.
+                </div>
+              )}
+              <div className="form-group">
+                <label>Your Email Address</label>
+                <input
+                  type="email"
+                  placeholder="yourname@gmail.com"
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
+                  autoFocus
+                  required
+                />
+                <span style={{ fontSize: 12, color: "var(--muted)" }}>
+                  Your Secret Santa assignment will be sent here privately — only you will see it. 🤫
+                </span>
+              </div>
+              <button
+                className="btn btn-red"
+                style={{ width: "100%", justifyContent: "center", padding: "12px", fontSize: 16 }}
+                disabled={loading}
+              >
+                {loading ? <span className="spinner" /> : alreadyHasEmail ? "Update my email 🎁" : "Save my email 🎁"}
+              </button>
+            </>
           )}
         </form>
 

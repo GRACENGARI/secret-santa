@@ -134,16 +134,9 @@ export default function Register() {
                 </div>
               )}
 
-              {/* Print slip person — no email needed */}
-              {memberId && isPrintSlip && (
-                <div className="alert alert-info">
-                  You are set up to receive a <strong>printed slip</strong> — no email needed.
-                  The organiser will hand it to you personally at the meetup. 🎁
-                </div>
-              )}
-
-              {/* Step 3 — Email (only for non-print-slip) */}
-              {memberId && !isPrintSlip && (
+              {/* Print slip person — still show email field, backend will update them */}
+              {/* Step 3 — Email for everyone */}
+              {memberId && (
                 <div className="form-group">
                   <label>Step 3 — Your Email Address</label>
                   <input

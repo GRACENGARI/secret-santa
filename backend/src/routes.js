@@ -78,11 +78,13 @@ router.post("/checkin", (req, res) => {
 
   const member = members[idx];
 
-  if (member.noSmartphone) {
-    return res.status(400).json({ error: "This person is set up for a printed slip — no email needed." });
-  }
+  // If they have an email, automatically unmark them as noSmartphone
+  const updated = {
+    ...member,
+    email: email.trim().toLowerCase(),
+    noSmartphone: false, // they clearly have a device if they're filling this in
+  };
 
-  const updated = { ...member, email: email.trim().toLowerCase() };
   const newMembers = [...members];
   newMembers[idx] = updated;
   setState({ members: newMembers });
